@@ -192,9 +192,12 @@ main section{
 
 /* TESTIMONIALS */
 
-@media screen and (min-width: 768px)[
+@media screen and (min-width: 768px){
 
     /* imgs negli item da sopra si spostano a sinistra */
 
-]
+}
 /* / TESTIMONIALS */
+
+
+
