@@ -20,6 +20,10 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-size: 2rem;
+}
+
 
 
 /* COMMON */
@@ -41,6 +45,16 @@ a{
     align-items: center;
 }
 
+.btn{
+    padding: .8rem 2.7rem;
+    border-radius: 20px;
+    border: 0;
+}
+
+.block{
+    display: block;
+}
+
 
 /* TIPOGRAFIa */
 
@@ -50,6 +64,14 @@ a{
 
 .bg-purple{
     background-color: #837FC5;
+}
+
+.bg-blue{
+    background-color: #0575DB;
+}
+
+.text-blue{
+    color: #0575DB;
 }
 
 .text-white{
@@ -64,6 +86,14 @@ a{
     text-align: center;
 }
 
+.text-medium{
+    font-size: 1.3rem;
+}
+
+.text-big{
+    font-size: 2rem;
+}
+
 .mb1{
     margin-bottom: 1em;
 }
@@ -71,6 +101,7 @@ a{
 .mb2{
     margin-bottom: 2em;
 }
+
 
 
 /* HEADER */
@@ -108,20 +139,22 @@ main section{
     padding: 2.5em 0;
 }
 
-.card{
+main .card{
     border-radius: 10px;
-    padding: 1rem;
+    
+    padding: 1em;
+
 }
 
 .item{
-    padding: 1rem;
+    padding: 1em;
     border-radius: 30px;
 }
 
     /* debug rules */
 .card , .item , section{
     border: 2px solid red;}
-    /* debug rules */
+    /* / debug rules */
 
 
 
@@ -129,20 +162,35 @@ main section{
 /* DEMO PART */
 
 #demo .card{
-    background-color: #95B6D1;
+    background-color: #a2c7e6;
     margin-bottom: 1em;
 }
+
+#demo .card div > i{
+    font-size: 5rem;
+}
+
+
+#demo .card:first-child{
+    padding-bottom: 0;
+}
+
 
 #demo .card:last-child{
     margin-bottom: none;
 }
 
+    /* tablet */
 @media screen and (min-width: 768px) {
     
     #demo .container{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    #demo .container .card img{
+        max-width: 60%;
     }
 
     #demo .container .card{
@@ -161,6 +209,32 @@ main section{
 
 }
 
+    /* desktop */
+@media screen and (min-width: 992px) {
+
+    #demo .wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #demo .wrap .col{
+        width: 46%;
+    }
+
+    #demo .wrap .col:last-child{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #demo .card:first-child{
+        padding-bottom: 0;
+    }
+
+    #demo .card:first-child img{
+        max-width: 95%;
+    }
+
+}
 /* / DEMO PART */
 
 
