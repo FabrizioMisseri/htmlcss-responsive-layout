@@ -47,6 +47,10 @@ a{
     background-color: white;
 }
 
+.bg-purple{
+    background-color: #837FC5;
+}
+
 .text-white{
     color: white;
 }
@@ -154,10 +158,6 @@ main section{
 
 /* STRATEGIC PLAN */
 
-#strat-plan{
-    background-color: #837FC5;
-}
-
 @media screen and (min-width: 992px) {
 
     #strat-plan .wrap{
@@ -187,3 +187,14 @@ main section{
     }
 
 }
+/* / STRATEGIC PLAN */
+
+
+/* TESTIMONIALS */
+
+@media screen and (min-width: 768px)[
+
+    /* imgs negli item da sopra si spostano a sinistra */
+
+]
+/* / TESTIMONIALS */
