@@ -56,6 +56,10 @@ a{
     color: white;
 }
 
+.text-purple{
+    color: #837FC5;
+}
+
 .text-center{
     text-align: center;
 }
@@ -235,5 +239,31 @@ main section{
     }
 
 }
+/* / BENEFITS PART */
+
+
+
+/*  ABOUT US */
+@media screen and (min-width: 768px) {
+    
+    #about-us .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-us .container .card:first-child{
+        margin-bottom: 0;
+        width: 59%;
+    }
+
+    #about-us .container .card:last-child{
+        width: 39%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+}
+/*  / ABOUT US */
+
 
 
