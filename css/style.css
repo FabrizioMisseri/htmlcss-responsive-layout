@@ -1,3 +1,5 @@
+/* RESET */
+
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +9,67 @@
 html{
     font-size: 100%;
     font-family: 'PT Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* COMMON */
+
+.container{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-white{
+    color: white;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #0575DB;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 992px){
+    
+    .container{
+        width: 70%;
+        max-width: 1200px;
+    }
+
+}
+
+
+/* MAIN */
+
+main{
+    padding-top: 7rem;
 }
