@@ -40,8 +40,23 @@ a{
     align-items: center;
 }
 
+
+/* TIPOGRAFIa */
+
+.bg-white{
+    background-color: white;
+}
+
 .text-white{
     color: white;
+}
+
+.mb1{
+    margin-bottom: 1em;
+}
+
+.mb2{
+    margin-bottom: 2em;
 }
 
 
@@ -60,6 +75,7 @@ header{
 
 @media screen and (min-width: 992px){
     
+    /* COMMON */
     .container{
         width: 70%;
         max-width: 1200px;
@@ -75,11 +91,17 @@ main{
     padding-top: 7rem;
 }
 
+main section{
+    padding: 2.5em 0;
+}
+
 .card{
     border-radius: 10px;
+    padding: 1rem;
 }
 
 .item{
+    padding: 1rem;
     border-radius: 30px;
 }
 
@@ -93,13 +115,13 @@ main{
 
 /* DEMO PART */
 
-#demo{
-    padding: 2em 0;
-}
-
 #demo .card{
     background-color: #95B6D1;
     margin-bottom: 1em;
+}
+
+#demo .card:last-child{
+    margin-bottom: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -112,10 +134,56 @@ main{
 
     #demo .container .card{
         width: calc(100% / 3 - 1rem);
+        margin-bottom: 0;
+    }
+
+    #demo .container .card:first-child,
+    #demo .container .card:nth-child(2){
+        margin-bottom: 1em;
     }
     
     #demo .container .card:first-child{
         width: calc( (100% / 3) * 2 - (1rem / 2));
+    }
+
+}
+
+/* / DEMO PART */
+
+
+
+/* STRATEGIC PLAN */
+
+#strat-plan{
+    background-color: #837FC5;
+}
+
+@media screen and (min-width: 992px) {
+
+    #strat-plan .wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #strat-plan .wrap{
+        padding: 0 2em;
+    }
+
+    #strat-plan .wrap .col{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    #strat-plan .wrap .card.mb1{
+        margin-bottom: 0;
+    }
+
+
+    #strat-plan .wrap .col:last-child{
+        justify-content: flex-end;
     }
 
 }
