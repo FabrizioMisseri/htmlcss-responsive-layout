@@ -21,6 +21,7 @@ a{
 }
 
 
+
 /* COMMON */
 
 .container{
@@ -53,6 +54,10 @@ a{
 
 .text-white{
     color: white;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .mb1{
@@ -191,7 +196,6 @@ main section{
 
 
 /* TESTIMONIALS */
-
 @media screen and (min-width: 768px){
 
     /* imgs negli item da sopra si spostano a sinistra */
@@ -199,5 +203,37 @@ main section{
 }
 /* / TESTIMONIALS */
 
+
+
+/* BENEFITS PART */
+@media screen and (min-width: 768px) {
+    
+    #benefits .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #benefits .wrap .card{
+        width: 49%;
+    }
+
+    #benefits .wrap .card:nth-child(5){
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #benefits .wrap .card{
+        width: calc(98% / 3);
+    }
+
+    #benefits .wrap .card:nth-child(4){
+        margin-bottom: 0;
+    }
+
+}
 
 
