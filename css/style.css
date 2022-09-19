@@ -267,3 +267,24 @@ main section{
 
 
 
+/* GET STARTED */
+@media screen and (min-width: 768px) {
+    
+    #start .card{
+        padding: 1em 2em;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #start .card{
+        padding: 1em;
+    }
+
+    #start .container{
+        width: 45%;  
+    }
+
+}
+/* / GET STARTED */
