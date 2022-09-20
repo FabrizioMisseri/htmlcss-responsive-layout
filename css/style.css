@@ -108,6 +108,7 @@ h1{
 
 
 
+
 /* HEADER */
 
 header{
@@ -253,12 +254,13 @@ main section{
         align-items: flex-end;
     }
 
-    #demo .card:first-child{
+    #demo .container div.card:first-child{
         padding-bottom: 0;
     }
 
     #demo .card:first-child img{
         max-width: 100%;
+        display: block;
     }
 
 }
