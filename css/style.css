@@ -235,6 +235,20 @@ main section{
 
 
 /* STRATEGIC PLAN */
+#strat-plan img{
+    border-radius: 40px;
+}
+
+#strat-plan span.down-arrow{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #837FC5;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+}
 
 @media screen and (min-width: 992px) {
 
@@ -255,8 +269,8 @@ main section{
     }
 
 
-    #strat-plan .wrap .card.mb1{
-        margin-bottom: 0;
+    #strat-plan .wrap .card{
+        padding: 0;
     }
 
     #strat-plan .wrap .col:first-child{
