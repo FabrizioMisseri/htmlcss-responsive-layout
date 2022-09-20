@@ -258,7 +258,7 @@ main section{
     }
 
     #demo .card:first-child img{
-        max-width: 95%;
+        max-width: 100%;
     }
 
 }
