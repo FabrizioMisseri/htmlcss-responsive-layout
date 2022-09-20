@@ -324,9 +324,34 @@ main section{
 
 
 /* TESTIMONIALS */
+#testimonials .item{
+    text-align: center;
+}
+
+#testimonials .item img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
 @media screen and (min-width: 768px){
 
-    /* imgs negli item da sopra si spostano a sinistra */
+    #testimonials .item{
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+
+    #testimonials .item .col:first-child{
+        min-width: 200px;
+        flex-shrink: 1;
+    }
+
+    #testimonials .item .col:first-child > div{
+        margin-bottom: 0%;
+    }
 
 }
 /* / TESTIMONIALS */
